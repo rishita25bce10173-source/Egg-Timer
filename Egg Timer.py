@@ -225,6 +225,8 @@ def main():
         chi="sunny side up: a vibrant disc of liquid gold surrounded by crisp white, awaiting the perfect pierce. (3–5 minutes)"
         print()
         print()    
+    else:
+      choi='n'
 def body(choi,chi):
     time.sleep(1)
     chit="Okay, so you want "+chi
@@ -434,7 +436,10 @@ def body(choi,chi):
                 
 intro()
 main()
-body(choi,chi)
+if choi=='n':
+    print("************ERROR************")
+else:
+    body(choi,chi)
                     
             
     
@@ -448,3 +453,4 @@ body(choi,chi)
         
     
     
+
